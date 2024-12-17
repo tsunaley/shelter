@@ -1,0 +1,5 @@
+#!/bin/bash
+mount -t devtmpfs none /dev
+/bin/c_client
+# /usr/local/bin/python /app/test.py
+exec /bin/bash

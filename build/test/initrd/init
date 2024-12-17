@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Mount necessary filesystems
+#mkdir -p /proc
+#mkdir -p /sys
+#mount -t proc none /proc
+#mount -t sysfs none /sys
+
+# Check if rootfs.tar exists and extract it
+#if [ -f /bin/rootfs.tar ]; then
+   # mkdir -p /mnt/rootfs
+  #  tar -xpf /bin/rootfs.tar -C /mnt/rootfs
+ #   switch_root /mnt/rootfs /sbin/init
+#else
+  #  echo "rootfs.tar not found!" > /dev/console
+ #   exit 1
+#fi
+exec /bin/sh

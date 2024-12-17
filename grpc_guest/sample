@@ -1,0 +1,10 @@
+{
+    "test-binary-1": [
+        "reference-value-1",
+        "reference-value-2"
+    ],
+    "test-binary-2": [
+        "reference-value-3",
+        "reference-value-4"
+    ]
+}

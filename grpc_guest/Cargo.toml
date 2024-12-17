@@ -1,0 +1,22 @@
+[package]
+name = "grpc_guest"
+version = "0.1.0"
+authors = ["Your Name <your.email@example.com>"]
+edition = "2021"
+
+[dependencies]
+tonic = "0.12"   # gRPC library for Rust
+prost = "0.13"  # Protocol Buffers library for Rust
+prost-types = "0.13" # Protocol Buffers types for Rust
+tokio = { version = "1", features = ["full"] } # Tokio for async runtime
+base64 = "0.21"  # 请使用适当的版本
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = "0.4"
+
+[build-dependencies]
+tonic-build = "0.12"  # Code generation for gRPC
+prost-build = "0.13" # Code generation for Protocol Buffers
+
+[workspace]
+members = []
